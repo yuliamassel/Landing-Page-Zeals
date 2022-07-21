@@ -1,0 +1,289 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  padding: 7rem;
+  width: 100%;
+  height: 825px;
+  background-color: #fbb03b;
+}
+
+.first-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-slide h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.first-slide h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.btn-join {
+  width: 140px;
+  height: 47px;
+  border: none;
+  outline: none;
+  background: #2f2f7c;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.our-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-product h2{
+    font-style: normal;
+font-weight: 800;
+font-size: 42px;
+line-height: 57px;
+text-align: center;
+text-transform: capitalize;
+color: #717171;
+}
+
+.our-product p{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 35px;
+text-align: center;
+color: #727272;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.features1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features1 h5{
+    font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 35px;
+color: #403D3D;
+}
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #707070;
+}
+
+.testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimony h2{
+    font-style: normal;
+font-weight: 800;
+font-size: 42px;
+line-height: 57px;
+text-align: center;
+text-transform: capitalize;
+color: #717171;
+}
+
+.testimony p{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 35px;
+text-align: center;
+color: #727272;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: row;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+height: 175px;
+padding: 1rem;
+margin-right: 2rem;
+box-shadow: 0px 0px 70px rgba(99, 99, 99, 0.15);
+background: #FFFFFF;
+border-radius: 20px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.Name{
+    display: flex;
+    flex-direction: column;
+}
+
+.Name h6{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.Name p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #706F6F;
+}
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients h2{
+    font-style: normal;
+font-weight: 800;
+font-size: 42px;
+line-height: 57px;
+text-align: center;
+text-transform: capitalize;
+color: #717171;
+}
+
+.clients p{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 35px;
+text-align: center;
+color: #727272;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+height: 679px;
+left: -124px;
+top: 6324px;
+background: #2F2F7C;
+box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);
+border-radius: 20px;
+}
+
+.contacts h2{
+    font-style: normal;
+font-weight: 800;
+font-size: 42px;
+line-height: 57px;
+text-align: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+
+.contacts p{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 35px;
+/* identical to box height, or 175% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.input-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 400px!important;
+    height: 42px;
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 8px;
+margin-bottom: 2rem;
+padding-left: 1rem;
+}
+
+.txt-label{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+
+.notes{
+    height: 112px;
+    width: 800px;
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 8px;
+}
+.btn-send{
+    width: 160px;
+height: 42px;
+margin-top: 2rem;
+background: #5DB6F2;
+border-radius: 8px;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+border: none;
+outline: none;
+text-align: center;
+color: #FFFFFF;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
