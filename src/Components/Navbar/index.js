@@ -9,11 +9,11 @@ const Navbar = () => {
           <img src="/img/image 1.svg" alt="" width={160}/>
         </div>
         <div className="tabs">
-        <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link className="px-3" href="">Product</Nav.Link>
-        <Nav.Link href="">Testimony</Nav.Link>
-        <Nav.Link className="px-3" href="">Our Clients</Nav.Link>
-        <Nav.Link href="">Contact Us</Nav.Link>
+        <Nav.Link className="nav-list" href="/">Home</Nav.Link>
+        <Nav.Link className="px-3 nav-list" href="">Product</Nav.Link>
+        <Nav.Link className="nav-list" href="">Testimony</Nav.Link>
+        <Nav.Link className="px-3 nav-list" href="">Our Clients</Nav.Link>
+        <Nav.Link className="nav-list" href="">Contact Us</Nav.Link>
         </div>
       </div>
   );

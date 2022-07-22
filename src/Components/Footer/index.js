@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <footer className="footer">
         <div className="right">
-            <h4 className="mb-2">Contact</h4>
+            <h4 className="pb-3">Contact</h4>
             <div className="contact d-flex flex-column">
                 <div className="mb-2">
                 <img src="/img/phone.svg" alt="" /> <span>+6281 1772823</span>
@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="mid">
-            <h4 className="mb-2">Resources</h4>
+            <h4 className="pb-3">Resources</h4>
             <div>
                 <p>API Integration</p>
                 <p>Referral Programs</p>
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="mid2">
-            <h4 className="mb-2">Privacy</h4>
+            <h4 className="pb-3">Privacy</h4>
             <div>
                 <p>Terms & Services</p>
                 <p>Policy Privacy</p>
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
         </div>
         <div>
-            <h4 className="mb-2">Partnership</h4>
+            <h4 className="pb-3">Partnership</h4>
             <div>
                 <p>Zeals Academy</p>
                 <p>Zeals Campus</p>
@@ -44,9 +44,9 @@ const Footer = () => {
       </footer>
       <div className="social-media mb-4">
         <div className="image d-flex flex-row mb-3">
-            <img src="/img/facebook.svg" alt="" />
-            <img className="mx-4" src="/img/instagram.svg" alt="" />
-            <img src="/img/twitter.svg" alt="" />
+            <img className="img-fluid " src="/img/instagram.svg" alt="" />
+            <img className="img-fluid mx-4" src="/img/twitter.svg" alt="" />
+            <img className="img-fluid" src="/img/facebook.svg" alt="" />
         </div>
         <p>2022 zealsasia. All Rights Reserved</p>
       </div>

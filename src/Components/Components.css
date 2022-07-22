@@ -19,6 +19,13 @@
     color: #777676;
 }
 
+
+  .nav-list:hover{
+    color: #fbb03b;
+    cursor: pointer;
+  }
+  
+
 /* STYLING FOOTER */
 .footer{
     display: flex;
