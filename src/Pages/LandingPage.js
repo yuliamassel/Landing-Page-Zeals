@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from "react-bootstrap/Carousel";
 // import { useNavigate } from "react-router";
 import Button from "../Components/Button";
 import Footer from "../Components/Footer";
@@ -9,105 +9,109 @@ import Navbar from "../Components/Navbar";
 import "./LandingPage.css";
 
 const LandingPage = () => {
+  // const navigate = useNavigate();
+  const [form, setForm] = useState({
+    fullName: "",
+    email: "",
+    companyName: "",
+    phoneNumber: null || 0,
+    notes: "",
+  });
 
-    // const navigate = useNavigate();
-    const [form, setForm] = useState({
-        fullName: "",
-        email: "",
-        companyName: "",
-        phoneNumber: null || 0,
-        notes: ""
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleContactUs = (e) => {
+    axios
+      .post("https://app.zeals.asia/api/pushdemorequest", {
+        fullName: form.fullName,
+        email: form.email,
+        companyName: form.companyName,
+        phoneNumber: form.phoneNumber,
+        notes: form.notes,
+      })
+      .then((res) => {
+        const result = res.data.data;
+        console.log("ini hasilnya", result);
+      })
+      .catch((err) => {
+        console.log(err);
       });
-    
-      const handleChange = (e) => {
-        setForm({
-          ...form,
-          [e.target.name]: e.target.value,
-        });
-      };
-
-      const handleSubmit = (e) => {
-        e.preventdefault()
-        axios
-        .post('https://app.zeals.asia/api/pushdemorequest', form)
-          .then((res) => {
-            const result = res.data.data;
-            console.log('Hasilnya',result);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      }
+  };
 
   return (
     <div className="container-fluid gx-0">
       <Navbar />
       <Carousel>
-      <Carousel.Item>
-        <img
-          className="mt-5 img-fluid img-slide"
-          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-        <div className="first-slide">
-          <h3>Join Us Now!</h3>
-          <h1>
-            World #1 <br /> Digital Marketing <br /> Platform
-          </h1>
-          <Button className="btn-join mt-2">Join Us</Button>
-        </div>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-          className="mt-5 img-fluid img-slide"
-          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-        <div className="first-slide">
-          <h3>Join Us Now!</h3>
-          <h1>
-            World #1 <br /> Digital Marketing <br /> Platform
-          </h1>
-          <Button className="btn-join mt-2">Join Us</Button>
-        </div>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-          className="mt-5 img-fluid img-slide"
-          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-        <div className="first-slide">
-          <h3>Join Us Now!</h3>
-          <h1>
-            World #1 <br /> Digital Marketing <br /> Platform
-          </h1>
-          <Button className="btn-join mt-2">Join Us</Button>
-        </div>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
-          className="mt-5 img-fluid img-slide"
-          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-        <div className="first-slide">
-          <h3>Join Us Now!</h3>
-          <h1>
-            World #1 <br /> Digital Marketing <br /> Platform
-          </h1>
-          <Button className="btn-join mt-2">Join Us</Button>
-        </div>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+        <Carousel.Item>
+          <img
+            className="mt-5 img-fluid img-slide"
+            src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <div className="first-slide">
+              <h3>Join Us Now!</h3>
+              <h1>
+                World #1 <br /> Digital Marketing <br /> Platform
+              </h1>
+              <Button className="btn-join mt-2">Join Us</Button>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="mt-5 img-fluid img-slide"
+            src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <div className="first-slide">
+              <h3>Join Us Now!</h3>
+              <h1>
+                World #1 <br /> Digital Marketing <br /> Platform
+              </h1>
+              <Button className="btn-join mt-2">Join Us</Button>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="mt-5 img-fluid img-slide"
+            src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <div className="first-slide">
+              <h3>Join Us Now!</h3>
+              <h1>
+                World #1 <br /> Digital Marketing <br /> Platform
+              </h1>
+              <Button className="btn-join mt-2">Join Us</Button>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="mt-5 img-fluid img-slide"
+            src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <div className="first-slide">
+              <h3>Join Us Now!</h3>
+              <h1>
+                World #1 <br /> Digital Marketing <br /> Platform
+              </h1>
+              <Button className="btn-join mt-2">Join Us</Button>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
       <div className="our-product py-5">
         <h2>Our Product</h2>
         <p className="mx-5 px-5">
@@ -248,30 +252,14 @@ const LandingPage = () => {
       </div>
       <div className="ratings py-5">
         <div className="rating">
-        <p className="txt-rating">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-            aliquet elit eu lobortis.
-          </p>
-          <div className="profile">
-            <img className="img-fluid"  src="/img/Ellipse 56.svg" alt="" />
-            <div className="Name ms-2">
-            <p className="name">Jhon Doe</p>
-            <p className="profesi">journalist</p>
-            </div>
-            <div className="stars ms-4 mt-4">
-              <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div className="rating">
-        <p className="txt-rating">
+          <p className="txt-rating">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
             aliquet elit eu lobortis.
           </p>
           <div className="profile">
             <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
             <div className="Name ms-2">
-            <p className="name">Jhon Doe</p>
+              <p className="name">Jhon Doe</p>
               <p className="profesi">journalist</p>
             </div>
             <div className="stars ms-4 mt-4">
@@ -284,7 +272,23 @@ const LandingPage = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
             aliquet elit eu lobortis.
           </p>
-          <div  className="profile">
+          <div className="profile">
+            <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
+            <div className="Name ms-2">
+              <p className="name">Jhon Doe</p>
+              <p className="profesi">journalist</p>
+            </div>
+            <div className="stars ms-4 mt-4">
+              <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="rating">
+          <p className="txt-rating">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
+            aliquet elit eu lobortis.
+          </p>
+          <div className="profile">
             <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
             <div className="Name ms-2">
               <p className="name">Jhon Doe</p>
@@ -300,35 +304,49 @@ const LandingPage = () => {
         <h2>Our Clients</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-          aliquet elit eu lobortis. Aliquam erat <br /> volutpat. Nunc vitae pharetra
-          ipsum. Morbi ac aliquet risus.
+          aliquet elit eu lobortis. Aliquam erat <br /> volutpat. Nunc vitae
+          pharetra ipsum. Morbi ac aliquet risus.
         </p>
         <div className="img-clients my-5">
-          <img className="img-fluid" src="/img/Screen Shot 2022-07-19 at 12.16 1.svg" alt="" />
-          <img className="mx-5 mx-xl-5 img-fluid" src="/img/Screen Shot 2022-07-19 at 10.59 1.svg" alt="" />
+          <img
+            className="img-fluid"
+            src="/img/Screen Shot 2022-07-19 at 12.16 1.svg"
+            alt=""
+          />
+          <img
+            className="mx-5 mx-xl-5 img-fluid"
+            src="/img/Screen Shot 2022-07-19 at 10.59 1.svg"
+            alt=""
+          />
           <img className="img-fluid" src="/img/unnamed 2.svg" alt="" />
-          <img className="img-fluid" src="/img/yqsxkpbgszuqbjqfsryz 1.svg" alt="" />
-          <img className="img-fluid" src="/img/Screen Shot 2022-07-19 at 10.54 1.svg" alt="" />
+          <img
+            className="img-fluid"
+            src="/img/yqsxkpbgszuqbjqfsryz 1.svg"
+            alt=""
+          />
+          <img
+            className="img-fluid"
+            src="/img/Screen Shot 2022-07-19 at 10.54 1.svg"
+            alt=""
+          />
         </div>
       </div>
       <div className="contacts">
         <h2>Contact Us</h2>
         <p>Get your free personalized demo</p>
-        <form onSubmit={handleSubmit}>
-        <div className="input-group mt-5">
+        <div>
+          <div className="input-group mt-5">
             <div className="input-right">
-        <label className="txt-label">
-               Full Name 
-              </label>
+              <label className="txt-label">Full Name</label>
               <Input
                 className="input"
                 type="text"
-                name='fullName'
+                name="fullName"
                 value={form.fullName}
                 onChange={handleChange}
               />
-              
-        <label className="txt-label">Email </label>
+
+              <label className="txt-label">Email </label>
               <Input
                 className="input"
                 type="email"
@@ -336,39 +354,43 @@ const LandingPage = () => {
                 name="email"
                 value={form.email}
               />
-              
-              </div>
-              <div className="input-left ms-3">
-              <label className="txt-label">
-               Company Name 
-              </label>
+            </div>
+            <div className="input-left ms-3">
+              <label className="txt-label">Company Name</label>
               <Input
                 className="input"
                 type="text"
-                name='companyName'
+                name="companyName"
                 value={form.companyName}
                 onChange={handleChange}
               />
-                      <label className="txt-label">
-               Phone Number 
-              </label>
+              <label className="txt-label">Phone Number</label>
               <Input
                 className="input"
                 type="number"
-                name='phoneNumber'
+                name="phoneNumber"
                 value={form.phoneNumber}
                 onChange={handleChange}
               />
-              </div>
+            </div>
+          </div>
+
+          <label className="txt-label">Notes</label>
+          <div className="d-flex flex-direction-column">
+            <textarea
+              className="notes"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <Button onClick={handleContactUs} className="btn-send" type="submit">
+            Send
+          </Button>
         </div>
-              <label className="txt-label">Notes</label>
-        <div className="d-flex flex-direction-column">
-              <textarea className="notes" name="" id="" cols="30" rows="10"></textarea>
-              </div>
-              <Button className="btn-send" type="submit">Send</Button>
-        </form>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
