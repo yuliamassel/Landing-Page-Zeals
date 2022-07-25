@@ -31,11 +31,9 @@ const LandingPage = () => {
       <Navbar />
       <div className="carousel">
         <img
-          className="mt-5 img-fluid"
+          className="mt-5 img-fluid img-slide"
           src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
           alt=""
-          width={400}
-      
         />
         <div className="first-slide">
           <h3>Join Us Now!</h3>
