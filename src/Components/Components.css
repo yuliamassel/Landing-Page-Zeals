@@ -37,16 +37,34 @@
   background-color: #ffffff;
 }
 
-.txt-footer{
+.txt-footer a{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.txt-contact{
+  display: flex;
+  flex-direction: row;
+}
+
+.txt-contact a{
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #666666;
+  text-decoration: none!important;
 }
 
-.social-media p {
+.link {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -54,6 +72,7 @@
   line-height: 20px;
   text-align: center;
   color: #8d8d8d;
+  text-decoration: none;
 }
 
 .footer h4{

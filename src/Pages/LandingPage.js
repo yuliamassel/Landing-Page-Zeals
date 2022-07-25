@@ -1,5 +1,7 @@
+import axios from "axios";
 import React, { useState } from "react";
 import Carousel from 'react-bootstrap/Carousel';
+// import { useNavigate } from "react-router";
 import Button from "../Components/Button";
 import Footer from "../Components/Footer";
 import Input from "../Components/Input";
@@ -8,6 +10,7 @@ import "./LandingPage.css";
 
 const LandingPage = () => {
 
+    // const navigate = useNavigate();
     const [form, setForm] = useState({
         fullName: "",
         email: "",
@@ -25,6 +28,15 @@ const LandingPage = () => {
 
       const handleSubmit = (e) => {
         e.preventdefault()
+        axios
+        .post('https://app.zeals.asia/api/pushdemorequest', form)
+          .then((res) => {
+            const result = res.data.data;
+            console.log('Hasilnya',result);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
       }
 
   return (
@@ -96,20 +108,6 @@ const LandingPage = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-      {/* <div className="carousel">
-        <img
-          className="mt-5 img-fluid img-slide"
-          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
-          alt=""
-        />
-        <div className="first-slide">
-          <h3>Join Us Now!</h3>
-          <h1>
-            World #1 <br /> Digital Marketing <br /> Platform
-          </h1>
-          <Button className="btn-join mt-2">Join Us</Button>
-        </div>
-      </div> */}
       <div className="our-product py-5">
         <h2>Our Product</h2>
         <p className="mx-5 px-5">
@@ -240,7 +238,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="testimony mb-5">
+      <div className="testimony py-5">
         <h2>Testimonials</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
@@ -248,7 +246,7 @@ const LandingPage = () => {
           pharetra ipsum. Morbi ac aliquet risus.
         </p>
       </div>
-      <div className="ratings">
+      <div className="ratings py-5">
         <div className="rating">
         <p className="txt-rating">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
@@ -298,14 +296,14 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="clients mt-5">
+      <div className="clients my-5">
         <h2>Our Clients</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
           aliquet elit eu lobortis. Aliquam erat <br /> volutpat. Nunc vitae pharetra
           ipsum. Morbi ac aliquet risus.
         </p>
-        <div className="img-clients">
+        <div className="img-clients my-5">
           <img className="img-fluid" src="/img/Screen Shot 2022-07-19 at 12.16 1.svg" alt="" />
           <img className="mx-5 mx-xl-5 img-fluid" src="/img/Screen Shot 2022-07-19 at 10.59 1.svg" alt="" />
           <img className="img-fluid" src="/img/unnamed 2.svg" alt="" />
@@ -367,7 +365,7 @@ const LandingPage = () => {
         <div className="d-flex flex-direction-column">
               <textarea className="notes" name="" id="" cols="30" rows="10"></textarea>
               </div>
-              <Button className="btn-send">Send</Button>
+              <Button className="btn-send" type="submit">Send</Button>
         </form>
       </div>
       <Footer/>
