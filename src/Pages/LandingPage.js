@@ -250,7 +250,7 @@ const LandingPage = () => {
           pharetra ipsum. Morbi ac aliquet risus.
         </p>
       </div>
-      <div className="ratings py-5">
+      <div className="ratings py-5 my-5">
         <div className="rating">
           <p className="txt-rating">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
@@ -307,7 +307,7 @@ const LandingPage = () => {
           aliquet elit eu lobortis. Aliquam erat <br /> volutpat. Nunc vitae
           pharetra ipsum. Morbi ac aliquet risus.
         </p>
-        <div className="img-clients my-5">
+        <div className="img-clients my-5 py-4">
           <img
             className="img-fluid"
             src="/img/Screen Shot 2022-07-19 at 12.16 1.svg"
