@@ -22,6 +22,10 @@ const LandingPage = () => {
         });
       };
 
+      const handleSubmit = (e) => {
+        e.preventdefault()
+      }
+
   return (
     <div className="container-fluid gx-0">
       <Navbar />
@@ -247,7 +251,7 @@ const LandingPage = () => {
       <div className="contacts">
         <h2>Contact Us</h2>
         <p>Get your free personalized demo</p>
-        <form action="">
+        <form onSubmit={handleSubmit}>
         <div className="input-group mt-5">
             <div className="input-right">
         <label className="txt-label">
@@ -256,7 +260,7 @@ const LandingPage = () => {
               <Input
                 className="input"
                 type="text"
-                name='name'
+                name='fullName'
                 value={form.fullName}
                 onChange={handleChange}
               />
@@ -278,7 +282,7 @@ const LandingPage = () => {
               <Input
                 className="input"
                 type="text"
-                name='name'
+                name='companyName'
                 value={form.companyName}
                 onChange={handleChange}
               />
@@ -288,7 +292,7 @@ const LandingPage = () => {
               <Input
                 className="input"
                 type="text"
-                name='name'
+                name='phoneNumber'
                 value={form.phoneNumber}
                 onChange={handleChange}
               />

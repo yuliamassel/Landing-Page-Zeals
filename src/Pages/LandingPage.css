@@ -15,6 +15,7 @@
 }
 
 .first-slide h3 {
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
@@ -23,6 +24,7 @@
 }
 
 .first-slide h1 {
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
@@ -36,6 +38,7 @@
   border: none;
   outline: none;
   background: #2f2f7c;
+  font-family: 'Nunito';
   font-style: normal;
 font-weight: 800;
 font-size: 18px;
@@ -59,6 +62,7 @@ color: #FFFFFF;
 }
 
 .our-product h2 {
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 42px;
@@ -69,6 +73,7 @@ color: #FFFFFF;
 }
 
 .our-product p {
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -92,6 +97,7 @@ color: #FFFFFF;
 }
 
 .features1 h5 {
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 28px;
@@ -102,6 +108,7 @@ color: #FFFFFF;
 .desc {
   display: flex;
   flex-direction: row;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -117,6 +124,7 @@ color: #FFFFFF;
 }
 
 .testimony h2 {
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 42px;
@@ -127,6 +135,7 @@ color: #FFFFFF;
 }
 
 .testimony p {
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -153,6 +162,15 @@ color: #FFFFFF;
   border-radius: 20px;
 }
 
+.txt-rating {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000000;
+}
+
 .profile {
   display: flex;
   flex-direction: row;
@@ -164,14 +182,18 @@ color: #FFFFFF;
 }
 
 .name {
+  font-family: 'Exo 2';
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .profesi {
+  font-family: 'Exo 2';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -187,6 +209,7 @@ color: #FFFFFF;
 }
 
 .clients h2 {
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 42px;
@@ -197,6 +220,7 @@ color: #FFFFFF;
 }
 
 .clients p {
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -219,25 +243,23 @@ color: #FFFFFF;
 }
 
 .contacts h2 {
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 42px;
   line-height: 57px;
   text-align: center;
   text-transform: capitalize;
-
   color: #ffffff;
 }
 
 .contacts p {
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  /* identical to box height, or 175% */
-
   text-align: center;
-
   color: #ffffff;
 }
 
@@ -259,20 +281,29 @@ color: #FFFFFF;
   border-radius: 8px;
   margin-bottom: 2rem;
   padding-left: 1rem;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
 }
 
 .txt-label {
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .notes {
   height: 112px;
   width: 800px;
+  border: none;
+  outline: none;
   background: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -284,6 +315,7 @@ color: #FFFFFF;
   margin-top: 2rem;
   background: #5db6f2;
   border-radius: 8px;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -346,10 +378,11 @@ color: #FFFFFF;
   }
 
   .txt-rating {
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 35px;
     color: #000000;
   }
 

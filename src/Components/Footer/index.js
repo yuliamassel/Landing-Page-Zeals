@@ -7,17 +7,17 @@ const Footer = () => {
         <div className="right">
             <h4 className="pb-3">Contact</h4>
             <div className="contact d-flex flex-column">
-                <div className="mb-2">
-                <img src="/img/phone.svg" alt="" /> <span>+6281 1772823</span>
+                <div className="mb-2 txt-footer">
+                <img className="me-2" src="/img/phone.svg" alt="" /> <span>+6281 1772823</span>
                 </div>
-                <div>
-                <img src="/img/envelope.svg" alt="" /> <span>hello@zeals.asia</span>
+                <div className="txt-footer">
+                <img className="me-2" src="/img/envelope.svg" alt="" /> <span>hello@zeals.asia</span>
                 </div>
             </div>
         </div>
         <div className="mid">
             <h4 className="pb-3">Resources</h4>
-            <div>
+            <div className="txt-footer">
                 <p>API Integration</p>
                 <p>Referral Programs</p>
                 <p>Affiliators</p>
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className="mid2">
             <h4 className="pb-3">Privacy</h4>
-            <div>
+            <div className="txt-footer">
                 <p>Terms & Services</p>
                 <p>Policy Privacy</p>
                 <p>FAQ</p>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div>
             <h4 className="pb-3">Partnership</h4>
-            <div>
+            <div className="txt-footer">
                 <p>Zeals Academy</p>
                 <p>Zeals Campus</p>
                 <p>Partnership Programs</p>
