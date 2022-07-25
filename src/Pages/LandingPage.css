@@ -333,6 +333,11 @@
   transition: 0.2s ease;
 }
 
+.input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .txt-label {
   font-family: "Open Sans";
   font-style: normal;

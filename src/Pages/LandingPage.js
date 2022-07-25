@@ -15,7 +15,7 @@ const LandingPage = () => {
         fullName: "",
         email: "",
         companyName: "",
-        phoneNumber: "",
+        phoneNumber: null || 0,
         notes: ""
       });
     
@@ -354,7 +354,7 @@ const LandingPage = () => {
               </label>
               <Input
                 className="input"
-                type="text"
+                type="number"
                 name='phoneNumber'
                 value={form.phoneNumber}
                 onChange={handleChange}
