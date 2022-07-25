@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Carousel from 'react-bootstrap/Carousel';
 import Button from "../Components/Button";
 import Footer from "../Components/Footer";
 import Input from "../Components/Input";
@@ -29,7 +30,73 @@ const LandingPage = () => {
   return (
     <div className="container-fluid gx-0">
       <Navbar />
-      <div className="carousel">
+      <Carousel>
+      <Carousel.Item>
+        <img
+          className="mt-5 img-fluid img-slide"
+          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+        <div className="first-slide">
+          <h3>Join Us Now!</h3>
+          <h1>
+            World #1 <br /> Digital Marketing <br /> Platform
+          </h1>
+          <Button className="btn-join mt-2">Join Us</Button>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          className="mt-5 img-fluid img-slide"
+          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+        <div className="first-slide">
+          <h3>Join Us Now!</h3>
+          <h1>
+            World #1 <br /> Digital Marketing <br /> Platform
+          </h1>
+          <Button className="btn-join mt-2">Join Us</Button>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          className="mt-5 img-fluid img-slide"
+          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+        <div className="first-slide">
+          <h3>Join Us Now!</h3>
+          <h1>
+            World #1 <br /> Digital Marketing <br /> Platform
+          </h1>
+          <Button className="btn-join mt-2">Join Us</Button>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          className="mt-5 img-fluid img-slide"
+          src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+        <div className="first-slide">
+          <h3>Join Us Now!</h3>
+          <h1>
+            World #1 <br /> Digital Marketing <br /> Platform
+          </h1>
+          <Button className="btn-join mt-2">Join Us</Button>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+      {/* <div className="carousel">
         <img
           className="mt-5 img-fluid img-slide"
           src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
@@ -42,7 +109,7 @@ const LandingPage = () => {
           </h1>
           <Button className="btn-join mt-2">Join Us</Button>
         </div>
-      </div>
+      </div> */}
       <div className="our-product py-5">
         <h2>Our Product</h2>
         <p className="mx-5 px-5">
@@ -53,13 +120,13 @@ const LandingPage = () => {
       </div>
       <div className="features mb-5">
         <div className="features1 px-5">
-          <h5 className="mb-4 ms-5">Affiliate Marketing Platform</h5>
+          <h5 className="mb-5 ms-5">Affiliate Marketing Platform</h5>
           <div className="desc">
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid"
+              className="img-fluid me-4"
             />
             <p>
               Zeals Affiliate marketing are those who are socially <br /> active
@@ -69,8 +136,8 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="features1 px-5">
-          <h5 className="mb-4 ms-3">Online to Offline Voucher</h5>
+        <div className="features1 px-5 my-5">
+          <h5 className="mb-5 ms-3">Online to Offline Voucher</h5>
           <div className="desc text-end">
             <p>
               Our online-to-offline system enables you to create an actionable
@@ -82,18 +149,18 @@ const LandingPage = () => {
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid"
+              className="img-fluid ms-4"
             />
           </div>
         </div>
         <div className="features1 px-5">
-          <h5 className="mb-4 ms-5">Social Media Listening</h5>
+          <h5 className="mb-5 ms-5">Social Media Listening</h5>
           <div className="desc">
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid"
+              className="img-fluid me-4"
             />
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -105,8 +172,8 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="features1 px-5">
-          <h5 className="mb-4 ms-3">Digital Marketing Consultant</h5>
+        <div className="features1 px-5 my-5">
+          <h5 className="mb-5 ms-3">Digital Marketing Consultant</h5>
           <div className="desc text-end">
             <p>
               Our Digital Marketing Consultant will assist designing digital
@@ -117,18 +184,18 @@ const LandingPage = () => {
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid"
+              className="img-fluid ms-4"
             />
           </div>
         </div>
         <div className="features1 px-5">
-          <h5 className="mb-4 ms-5">Social Media Scoring</h5>
+          <h5 className="mb-5 ps-5">Social Media Scoring</h5>
           <div className="desc">
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid"
+              className="img-fluid me-4"
             />
             <p>
               With Social Media Listening you will get hearing ability and
@@ -138,8 +205,8 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="features1 px-5">
-          <h5 className="mb-4 ms-3">Marketplace for influencer and buzzer</h5>
+        <div className="features1 px-5 my-5">
+          <h5 className="mb-5 me-5">Marketplace for influencer and buzzer</h5>
           <div className="desc text-end">
             <p>
               Our hand-picked influencers with strong engagement rate will take
@@ -154,13 +221,13 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="features1 px-5">
-          <h5 className="mb-4 me-5 pe-5 text-start">Awarding</h5>
+          <h5 className="mb-5 award">Awarding</h5>
           <div className="desc">
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid"
+              className="img-fluid me-4"
             />
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
