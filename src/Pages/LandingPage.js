@@ -55,8 +55,8 @@ const LandingPage = () => {
           />
           <Carousel.Caption>
             <div className="first-slide">
-              <h3>Join Us Now!</h3>
-              <h1>
+              <h3 className="txt-join">Join Us Now!</h3>
+              <h1 className="txt-slide">
                 World #1 <br /> Digital Marketing <br /> Platform
               </h1>
               <Button className="btn-join mt-2">Join Us</Button>
@@ -71,8 +71,24 @@ const LandingPage = () => {
           />
           <Carousel.Caption>
             <div className="first-slide">
-              <h3>Join Us Now!</h3>
-              <h1>
+              <h3 className="txt-join">Join Us Now!</h3>
+              <h1 className="txt-slide">
+                World #1 <br /> Digital Marketing <br /> Platform
+              </h1>
+              <Button className="btn-join mt-xl-2 mt-0">Join Us</Button>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="mt-5 img-fluid img-slide"
+            src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <div className="first-slide">
+              <h3 className="txt-join">Join Us Now!</h3>
+              <h1 className="txt-slide">
                 World #1 <br /> Digital Marketing <br /> Platform
               </h1>
               <Button className="btn-join mt-2">Join Us</Button>
@@ -87,24 +103,8 @@ const LandingPage = () => {
           />
           <Carousel.Caption>
             <div className="first-slide">
-              <h3>Join Us Now!</h3>
-              <h1>
-                World #1 <br /> Digital Marketing <br /> Platform
-              </h1>
-              <Button className="btn-join mt-2">Join Us</Button>
-            </div>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="mt-5 img-fluid img-slide"
-            src="/img/Business_team_looking_for_new_people_1-removebg-preview.png"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <div className="first-slide">
-              <h3>Join Us Now!</h3>
-              <h1>
+              <h3 className="txt-join">Join Us Now!</h3>
+              <h1 className="txt-slide">
                 World #1 <br /> Digital Marketing <br /> Platform
               </h1>
               <Button className="btn-join mt-2">Join Us</Button>
@@ -114,13 +114,25 @@ const LandingPage = () => {
       </Carousel>
       <div className="our-product py-5">
         <h2>Our Product</h2>
-        <p className="mx-5 px-5">
+        <p className="mx-xl-5 px-xl-5 mx-2 px-2">
           Integrated Digital Marketing Ecosystem that helps you connect with
           your audience. <br /> Aliquam erat volutpat. Nunc vitae pharetra
           ipsum. Morbi ac aliquet risus.
         </p>
       </div>
-      <div className="features mb-5">
+      <div className="graph d-lg-none d-xl-none">
+        <div className="text-center me-3 txt-real-time">
+          <img className="img-fluid" src="/img/graph.svg" alt="" />
+          <h4 className="mt-3">Real Time</h4>
+          <p>Graphic Perfomance</p>
+        </div>
+        <div className="text-center me-3 txt-real-time">
+          <img className="img-fluid" src="/img/list.svg" alt="" />
+          <h4 className="mt-3">Trackers</h4>
+          <p>Logs</p>
+        </div>
+      </div>
+      <div className="features mb-5 d-none d-lg-block d-xl-block">
         <div className="features1 px-5">
           <h5 className="mb-5 ms-5">Affiliate Marketing Platform</h5>
           <div className="desc">
@@ -242,7 +254,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="testimony py-5">
+      <div className="testimony d-none d-lg-block d-xl-block py-5">
         <h2>Testimonials</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
@@ -250,6 +262,82 @@ const LandingPage = () => {
           pharetra ipsum. Morbi ac aliquet risus.
         </p>
       </div>
+
+      <div className="testimony-mobile ms-4 mt-5 d-lg-none d-xl-none">
+        <h5 className="title-testimonial">Testimonials</h5>
+        <p className="desc-testimonial">
+          We are happy to share our <br /> client’s review
+        </p>
+        <div className="our-clients-mobile">
+          <div className="clients-mobile ms-4 mt-4">
+            <p className="txt-rating-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
+              aliquet elit eu lobortis.
+            </p>
+            <div className="profile-mobile">
+              <img
+                className="img-fluid"
+                src="/img/Ellipse 56.svg"
+                alt=""
+                width={24}
+                height={24}
+              />
+              <div className="Name-mobile">
+                <p className="name-mobile">Jhon Doe</p>
+                <p className="profesi-mobile">Journalist</p>
+              </div>
+              <div className="stars ms-5 mt-3">
+                <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="clients-mobile ms-4 mt-4">
+            <p className="txt-rating-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
+              aliquet elit eu lobortis.
+            </p>
+            <div className="profile-mobile">
+              <img
+                className="img-fluid"
+                src="/img/Ellipse 56.svg"
+                alt=""
+                width={24}
+                height={24}
+              />
+              <div className="Name-mobile">
+                <p className="name-mobile">Jhon Doe</p>
+                <p className="profesi-mobile">Journalist</p>
+              </div>
+              <div className="stars ms-5 mt-3">
+                <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="clients-mobile ms-4 mt-4">
+            <p className="txt-rating-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
+              aliquet elit eu lobortis.
+            </p>
+            <div className="profile-mobile">
+              <img
+                className="img-fluid"
+                src="/img/Ellipse 56.svg"
+                alt=""
+                width={24}
+                height={24}
+              />
+              <div className="Name-mobile">
+                <p className="name-mobile">Jhon Doe</p>
+                <p className="profesi-mobile">Journalist</p>
+              </div>
+              <div className="stars ms-5 mt-3">
+                <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="ratings py-5 my-5">
         <div className="rating">
           <p className="txt-rating">
@@ -300,13 +388,26 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="clients my-5">
+      <div className="clients my-5 px-xl-0 px-2">
         <h2>Our Clients</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
           aliquet elit eu lobortis. Aliquam erat <br /> volutpat. Nunc vitae
           pharetra ipsum. Morbi ac aliquet risus.
         </p>
+
+        <div className="img-clients-mobile d-xl-none d-lg-none my-2">
+          <img src="/img/gojek.svg" alt="" />
+          <img src="/img/gojek.svg" alt="" />
+          <img src="/img/gojek.svg" alt="" />
+          <img src="/img/gojek.svg" alt="" />
+          <img src="/img/gojek.svg" alt="" />
+          <img src="/img/gojek.svg" alt="" />
+          <img src="/img/gojek.svg" alt="" />
+          <img src="/img/gojek.svg" alt="" />
+          <img src="/img/gojek.svg" alt="" />
+        </div>
+
         <div className="img-clients my-5 py-4">
           <img
             className="img-fluid"
@@ -331,6 +432,55 @@ const LandingPage = () => {
           />
         </div>
       </div>
+
+      <div className="contacts-mobile d-lg-none d-xl-none ms-3">
+        <h2>Contact Us</h2>
+        <p>Get your free personalized demo</p>
+        <div className="group-input-mobile ms-4">
+          <div className="mt-3 mb-2">
+          <label className="txt-label-mobile mb-1">First Name</label>
+          <Input
+            className="input-mobile"
+            type="text"
+            name="fullName"
+            value={form.fullName}
+            onChange={handleChange}
+          />
+          </div>
+          <div>
+          <label className="txt-label-mobile mb-1">Last Name</label>
+          <Input
+            className="input-mobile"
+            type="text"
+            name="fullName"
+            value={form.fullName}
+            onChange={handleChange}
+          />
+          </div>
+          <div className="my-2">
+          <label className="txt-label-mobile mb-1">Email </label>
+          <Input
+            className="input-mobile"
+            type="email"
+            onChange={handleChange}
+            name="email"
+            value={form.email}
+          />
+          </div>
+          <div>
+          <label className="txt-label-mobile mb-1">Phone Number</label>
+          <Input
+            className="input-mobile"
+            type="number"
+            name="phoneNumber"
+            value={form.phoneNumber}
+            onChange={handleChange}
+          />
+          </div>
+          <Button className="btn-send-mobile">Send</Button>
+        </div>
+      </div>
+
       <div className="contacts">
         <h2>Contact Us</h2>
         <p>Get your free personalized demo</p>

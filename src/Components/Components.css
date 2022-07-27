@@ -19,6 +19,7 @@
   font-size: 18px;
   line-height: 18px;
   color: #777676;
+  margin-left: 33rem;
 }
 
 .nav-list:hover {
@@ -82,4 +83,93 @@ font-weight: 800;
 font-size: 18px;
 line-height: 20px;
 color: #666666;
+}
+
+#toggle{
+  position: relative;
+  width: 80px;
+  height: 50px;
+  /* transform: translateY(-9vh); */
+  border: none;
+  /* margin-right: 2rem; */
+  background: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+/* #toggle.active{
+  background: #BEC3CA4D;
+} */
+#toggle::before{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background: black;
+  transition: 0.2s;
+  transform: translateY(-10px);
+  box-shadow: 0  10px 0 black;
+}
+#toggle.active::before{
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: 0  0 0 black;
+}
+#toggle::after{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background: black;
+  transition: 0.2s;
+  transform: translateY(10px);
+}
+#toggle.active::after{
+  transform: translateY(0px) rotate(-45deg);
+}
+
+
+@media screen and (max-width: 768px){
+
+    .footer{
+      padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 380px){
+  /* .logo{
+    margin-left: -2rem;
+  }
+
+  .toggle-btn{
+    margin-left: -1rem;
+    padding-left: 5rem;
+  } */
+
+  .footer{
+    display: none;
+  }
+
+  .social-media{
+    display: none;
+  }
+
+  .footer-mobile{
+    width: 100%;
+height: 583px;
+background: rgba(0, 0, 0, 0.1);
+  }
+
+  .logo-footer{
+    width: 79.17px;
+height: 25px;
+  }
+
+  .img-sosmed-footer{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
 }
