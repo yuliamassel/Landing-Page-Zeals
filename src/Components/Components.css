@@ -7,19 +7,18 @@
   height: 100px;
   width: 100%;
   background: #ffffff;
-  
 }
 
 .tabs {
   display: flex;
   flex-direction: row;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 18px;
   color: #777676;
-  margin-left: 33rem;
+  margin-left: 50rem;
 }
 
 .nav-list:hover {
@@ -38,35 +37,35 @@
   background-color: #ffffff;
 }
 
-.txt-footer a{
+.txt-footer a {
   display: flex;
   flex-direction: column;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 40px;
   color: #666666;
   text-decoration: none;
 }
 
-.txt-contact{
+.txt-contact {
   display: flex;
   flex-direction: row;
 }
 
-.txt-contact a{
-  font-family: 'Nunito';
+.txt-contact a {
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   color: #666666;
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 .link {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -76,68 +75,22 @@
   text-decoration: none;
 }
 
-.footer h4{
-  font-family: 'Nunito';
+.footer h4 {
+  font-family: "Nunito";
   font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 20px;
-color: #666666;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 20px;
+  color: #666666;
 }
 
-#toggle{
-  position: relative;
-  width: 80px;
-  height: 50px;
-  /* transform: translateY(-9vh); */
-  border: none;
-  /* margin-right: 2rem; */
-  background: white;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
-}
-/* #toggle.active{
-  background: #BEC3CA4D;
-} */
-#toggle::before{
-  content: '';
-  position: absolute;
-  width: 35px;
-  height: 2px;
-  background: black;
-  transition: 0.2s;
-  transform: translateY(-10px);
-  box-shadow: 0  10px 0 black;
-}
-#toggle.active::before{
-  transform: translateY(0px) rotate(45deg);
-  box-shadow: 0  0 0 black;
-}
-#toggle::after{
-  content: '';
-  position: absolute;
-  width: 35px;
-  height: 2px;
-  background: black;
-  transition: 0.2s;
-  transform: translateY(10px);
-}
-#toggle.active::after{
-  transform: translateY(0px) rotate(-45deg);
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 3rem;
+  }
 }
 
-
-@media screen and (max-width: 768px){
-
-    .footer{
-      padding: 3rem;
-    }
-}
-
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px) {
   /* .logo{
     margin-left: -2rem;
   }
@@ -147,29 +100,101 @@ color: #666666;
     padding-left: 5rem;
   } */
 
-  .footer{
+  .footer {
     display: none;
   }
 
-  .social-media{
+  .social-media {
     display: none;
   }
 
-  .footer-mobile{
+  .footer-mobile {
     width: 100%;
-height: 583px;
-background: rgba(0, 0, 0, 0.1);
+    /* height: 583px; */
+    background: rgba(0, 0, 0, 0.1);
   }
 
-  .logo-footer{
+  .desc-footer{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+color: #000000;
+margin-top: 2rem;
+  }
+
+  .addres{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+color: #000000;
+margin-top: 2rem;
+  }
+
+  .txt-contact-mobile a{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 14px;
+color: #000000;
+text-decoration: none;
+  }
+
+  .txt-footer-mobile a{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0px;
+    color: #000000;
+    margin-top: 2rem;
+    text-decoration: none;
+  }
+
+  .sosmed-footer span{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 14px;
+color: #000000;
+  }
+
+  .sosmed-footer a{
+    text-decoration: none!important;
+  }
+
+  .logo-footer {
     width: 79.17px;
-height: 25px;
+    height: 25px;
   }
 
-  .img-sosmed-footer{
+  .img-sosmed-footer {
     width: 20px;
     height: 20px;
     border-radius: 50%;
   }
 
+  .toggle-btn {
+    border: none;
+    outline: none;
+  }
+
+  .modal {
+    position: absolute;
+    width: 360px;
+    height: 338px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.4));
+    z-index: 2000;
+    background: #ffffff;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 0px 16px 16px;
+  }
 }

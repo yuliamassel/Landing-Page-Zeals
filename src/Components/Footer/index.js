@@ -48,36 +48,68 @@ const Footer = () => {
 
       <div className="footer-mobile d-lg-none d-xl-none p-5 mt-5">
         <img className="logo-footer" src="/img/image 1.svg" alt="" />
-        <p>
+        <p className="desc-footer">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
           aliquet elit eu lobortis. Aliquam erat volutpat. Nunc vitae pharetra
           ipsum. Morbi ac aliquet risus. Ut pulvinar tellus lobortis ornare
           facilisis.
         </p>
         <h4>Contact Info</h4>
-        <p>455 West Orchard Street Kings Mountain, NC 28086</p>
+        <p className="addres">455 West Orchard Street Kings Mountain, NC 28086</p>
         <div className="contact d-flex flex-column">
-            <div className="mb-2 txt-contact">
+            <div className="mb-2 txt-contact-mobile">
               <img className="me-2" src="/img/telp-footer.svg" alt="" />{" "}
               <a href=""> +6281 1772823 </a>
             </div>
-            <div className="txt-contact">
+            <div className="txt-contact-mobile">
               <img className="me-2" src="/img/envelope-footer.svg" alt="" />{" "}
               <a href=""> hello@zeals.asia </a>
             </div>
           </div>
+          <div className="mid">
+          <h4 className="pb-xl-3 mt-4">Resources</h4>
+          <div className="txt-footer-mobile">
+            <a href="">API Integration</a>
+            <a href="">Referral Programs</a>
+            <a href="">Affiliators</a>
+            <a href="">Brand Platfrom</a>
+            <a href="">Tutorials</a>
+          </div>
+        </div>
+        <div className="mid2">
+          <h4 className="pb-xl-3 mt-4">Privacy</h4>
+          <div className="txt-footer-mobile">
+            <a href="">Terms & Services</a>
+            <a href="">Policy Privacy</a>
+            <a href="">FAQ</a>
+          </div>
+        </div>
+        <div className="my-4">
+          <h4 className="pb-xl-3">Partnership</h4>
+          <div className="txt-footer-mobile">
+            <a href="">Zeals Academy</a>
+            <a href="">Zeals Campus</a>
+            <a href="">Partnership Programs</a>
+          </div>
+        </div>
           <h4>Follow Us</h4>
           <div className="sosmed-footer">
             <div className="image-footer d-flex flex-column">
+              <div>
               <a href="">
-                <img className="img-sosmed-footer" src="/img/fb-footer.svg" alt="" />
+                <img className="img-sosmed-footer" src="/img/fb-footer.svg" alt="" /> <span>Zeals Asia</span>
               </a>
+              </div>
+              <div>
               <a href="">
-                <img className="img-sosmed-footer" src="/img/tweet-footer.svg" alt="" />
+                <img className="img-sosmed-footer" src="/img/tweet-footer.svg" alt="" /> <span>zealsasia</span>
               </a>
+              </div>
+              <div>
               <a href="">
-                <img className="img-sosmed-footer" src="/img/ig-footer.svg" alt="" />
+                <img className="img-sosmed-footer" src="/img/ig-footer.svg" alt="" /> <span>zealsasia</span>
               </a>
+              </div>
             </div>
           </div>
           <hr />

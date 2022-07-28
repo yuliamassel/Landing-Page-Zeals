@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
+import * as BsIcons from "react-icons/gi";
 import "../Components.css";
+import Modal from "../Modal";
 
 const Navbar = () => {
+
+  const [openModal, setOpenModal]= useState()
+
   return (
     <div className="navbar px-xl-5 px-2">
       <div className="logo">
@@ -28,10 +33,8 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-        <button
-          className="toggle-btn d-xl-none d-md-block"
-          id="toggle"
-        ></button>
+      <BsIcons.GiHamburgerMenu className="me-2 d-lg-none d-xl-none" size={28} onClick={()=>{setOpenModal(true)}}/>
+        {openModal && <Modal className="Tabs" closeModal={setOpenModal}>kakakak</Modal>}
       </div>
     </div>
   );

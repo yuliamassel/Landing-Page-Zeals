@@ -24,7 +24,7 @@ const LandingPage = () => {
       [e.target.name]: e.target.value,
     });
   };
-
+  // https://app.zeals.asia/apiv1/maildemo
   const handleContactUs = (e) => {
     axios
       .post("https://app.zeals.asia/api/pushdemorequest", {
@@ -112,7 +112,7 @@ const LandingPage = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <div className="our-product py-5">
+      <div className="our-product py-xl-5">
         <h2>Our Product</h2>
         <p className="mx-xl-5 px-xl-5 mx-2 px-2">
           Integrated Digital Marketing Ecosystem that helps you connect with
@@ -120,61 +120,55 @@ const LandingPage = () => {
           ipsum. Morbi ac aliquet risus.
         </p>
       </div>
-      <div className="graph d-lg-none d-xl-none">
-        <div className="text-center me-3 txt-real-time">
-          <img className="img-fluid" src="/img/graph.svg" alt="" />
-          <h4 className="mt-3">Real Time</h4>
-          <p>Graphic Perfomance</p>
-        </div>
-        <div className="text-center me-3 txt-real-time">
-          <img className="img-fluid" src="/img/list.svg" alt="" />
-          <h4 className="mt-3">Trackers</h4>
-          <p>Logs</p>
-        </div>
-      </div>
-      <div className="features mb-5 d-none d-lg-block d-xl-block">
-        <div className="features1 px-5">
-          <h5 className="mb-5 ms-5">Affiliate Marketing Platform</h5>
+      <div className="features mb-xl-5">
+        <div className="features1 px-xl-5 my-xl-5">
+          <h5 className="mb-xl-5 ms-xl-5 mb-2">Affiliate Marketing Platform</h5>
           <div className="desc">
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid me-4"
+              className="img-fluid img-slide me-xl-4"
             />
-            <p>
-              Zeals Affiliate marketing are those who are socially <br /> active
-              and are connected to your targeted real-person <br /> that will
-              share Zeals ‘unique link’ to enhance exposure <br /> and
+            <p className="">
+              Zeals Affiliate marketing are those who are socially active
+              and are connected to your targeted real-person that will
+              share Zeals ‘unique link’ to enhance exposure and
               conversion at the same time.
             </p>
           </div>
         </div>
-        <div className="features1 px-5 my-5">
-          <h5 className="mb-5 ms-3">Online to Offline Voucher</h5>
+        <div className="features1 px-xl-5 my-xl-5 my-3">
+          <h5 className="mb-xl-5 ms-xl-5 mb-2">Online to Offline Voucher</h5>
           <div className="desc text-end">
+          <img
+              src="/img/Business team looking for new people 5.svg"
+              alt=""
+              width={480}
+              className="img-fluid img-slide d-lg-none d-xl-none ms-xl-4 d-flex end-img"
+            />
             <p>
               Our online-to-offline system enables you to create an actionable
-              and measurable campaign at the same time, <br /> in one single
-              platform through specifically generated <br /> QR for your
+              and measurable campaign at the same time, in one single
+              platform through specifically generated QR for your
               campaign.
             </p>
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid ms-4"
+              className="img-fluid img-slide bot-img ms-4"
             />
           </div>
         </div>
-        <div className="features1 px-5">
-          <h5 className="mb-5 ms-5">Social Media Listening</h5>
+        <div className="features1 px-xl-5 my-xl-5 my-3">
+          <h5 className="mb-xl-5 ms-xl-5 mb-2">Social Media Listening</h5>
           <div className="desc">
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid me-4"
+              className="img-fluid img-slide me-xl-4"
             />
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -186,9 +180,15 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="features1 px-5 my-5">
-          <h5 className="mb-5 ms-3">Digital Marketing Consultant</h5>
+        <div className="features1 px-xl-5 my-xl-5 my-3">
+          <h5 className="mb-xl-5 ms-xl-5 mb-2">Digital Marketing Consultant</h5>
           <div className="desc text-end">
+          <img
+              src="/img/Business team looking for new people 5.svg"
+              alt=""
+              width={480}
+              className="img-fluid img-slide d-lg-none d-xl-none ms-xl-4 d-flex end-img"
+            />
             <p>
               Our Digital Marketing Consultant will assist designing digital
               strategies and providing solutions to help you achieve business
@@ -198,18 +198,18 @@ const LandingPage = () => {
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid ms-4"
+              className="img-fluid img-slide bot-img ms-4"
             />
           </div>
         </div>
-        <div className="features1 px-5">
-          <h5 className="mb-5 ps-5">Social Media Scoring</h5>
+        <div className="features1 px-xl-5 my-xl-5 my-3">
+          <h5 className="mb-xl-5 ms-xl-5 mb-2">Social Media Scoring</h5>
           <div className="desc">
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid me-4"
+              className="img-fluid img-slide me-4"
             />
             <p>
               With Social Media Listening you will get hearing ability and
@@ -219,9 +219,15 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="features1 px-5 my-5">
-          <h5 className="mb-5 me-5">Marketplace for influencer and buzzer</h5>
-          <div className="desc text-end">
+        <div className="features1 px-xl-5 my-xl-5 my-3">
+          <h5 className="mb-xl-5 ms-xl-5 mb-2">Marketplace for influencer and buzzer</h5>
+          <div className="desc text-xl-end">
+          <img
+              src="/img/Business team looking for new people 5.svg"
+              alt=""
+              width={480}
+              className="img-fluid img-slide d-lg-none d-xl-none ms-xl-4 d-flex end-img"
+            />
             <p>
               Our hand-picked influencers with strong engagement rate will take
               your campaigns to the next level.
@@ -230,18 +236,18 @@ const LandingPage = () => {
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid"
+              className="img-fluid img-slide bot-img"
             />
           </div>
         </div>
-        <div className="features1 px-5">
-          <h5 className="mb-5 award">Awarding</h5>
+        <div className="features1 px-xl-5 my-xl-5 my-3">
+          <h5 className="mb-2 mb-xl-5 award">Awarding</h5>
           <div className="desc">
             <img
               src="/img/Business team looking for new people 5.svg"
               alt=""
               width={480}
-              className="img-fluid me-4"
+              className="img-fluid img-slide me-4"
             />
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -254,7 +260,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="testimony d-none d-lg-block d-xl-block py-5">
+      <div className="testimony py-5 px-3">
         <h2>Testimonials</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
@@ -263,7 +269,7 @@ const LandingPage = () => {
         </p>
       </div>
 
-      <div className="testimony-mobile ms-4 mt-5 d-lg-none d-xl-none">
+      {/* <div className="testimony-mobile ms-4 mt-5 d-lg-none d-xl-none">
         <h5 className="title-testimonial">Testimonials</h5>
         <p className="desc-testimonial">
           We are happy to share our <br /> client’s review
@@ -336,53 +342,53 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="ratings py-5 my-5">
-        <div className="rating">
+      <div className="ratings py-xl-5 my-xl-5">
+        <div className="rating my-3 my-xl-0">
           <p className="txt-rating">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
             aliquet elit eu lobortis.
           </p>
           <div className="profile">
-            <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
-            <div className="Name ms-2">
+            <img className="img-fluid mt-xl-0 mt-3 me-xl-0 me-2" src="/img/Ellipse 56.svg" alt="" />
+            <div className="Name ms-xl-2">
               <p className="name">Jhon Doe</p>
               <p className="profesi">journalist</p>
             </div>
-            <div className="stars ms-4 mt-4">
+            <div className="stars ms-xl-4 mt-xl-4 ms-5">
               <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
             </div>
           </div>
         </div>
-        <div className="rating">
+        <div className="rating my-3 my-xl-0">
           <p className="txt-rating">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
             aliquet elit eu lobortis.
           </p>
           <div className="profile">
-            <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
-            <div className="Name ms-2">
+            <img className="img-fluid mt-xl-0 mt-3 me-xl-0 me-2" src="/img/Ellipse 56.svg" alt="" />
+            <div className="Name ms-xl-2">
               <p className="name">Jhon Doe</p>
               <p className="profesi">journalist</p>
             </div>
-            <div className="stars ms-4 mt-4">
+            <div className="stars ms-xl-4 mt-xl-4 ms-5">
               <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
             </div>
           </div>
         </div>
-        <div className="rating">
+        <div className="rating my-3 my-xl-0">
           <p className="txt-rating">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
             aliquet elit eu lobortis.
           </p>
           <div className="profile">
-            <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
+            <img className="img-fluid mt-xl-0 mt-3 me-xl-0 me-2" src="/img/Ellipse 56.svg" alt="" />
             <div className="Name ms-2">
               <p className="name">Jhon Doe</p>
               <p className="profesi">journalist</p>
             </div>
-            <div className="stars ms-4 mt-4">
+            <div className="stars ms-xl-4 mt-xl-4 ms-5">
               <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
             </div>
           </div>
@@ -397,15 +403,16 @@ const LandingPage = () => {
         </p>
 
         <div className="img-clients-mobile d-xl-none d-lg-none my-2">
-          <img src="/img/gojek.svg" alt="" />
-          <img src="/img/gojek.svg" alt="" />
-          <img src="/img/gojek.svg" alt="" />
-          <img src="/img/gojek.svg" alt="" />
-          <img src="/img/gojek.svg" alt="" />
-          <img src="/img/gojek.svg" alt="" />
-          <img src="/img/gojek.svg" alt="" />
-          <img src="/img/gojek.svg" alt="" />
-          <img src="/img/gojek.svg" alt="" />
+          <img className="img-client" src="/img/Logo Client-01.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-02.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-03.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-04.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-05.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-06.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-07.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-08.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-09.jpg" alt="" />
+          <img className="img-client" src="/img/Logo Client-10.jpg" alt="" />
         </div>
 
         <div className="img-clients my-5 py-4">
@@ -433,7 +440,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="contacts-mobile d-lg-none d-xl-none ms-3">
+      {/* <div className="contacts-mobile d-lg-none d-xl-none ms-3">
         <h2>Contact Us</h2>
         <p>Get your free personalized demo</p>
         <div className="group-input-mobile ms-4">
@@ -479,7 +486,7 @@ const LandingPage = () => {
           </div>
           <Button className="btn-send-mobile">Send</Button>
         </div>
-      </div>
+      </div> */}
 
       <div className="contacts">
         <h2>Contact Us</h2>
@@ -504,8 +511,25 @@ const LandingPage = () => {
                 name="email"
                 value={form.email}
               />
+
+<label className="txt-label d-lg-none d-xl-none">Company Name</label>
+              <Input
+                className="input d-lg-none d-xl-none"
+                type="text"
+                name="companyName"
+                value={form.companyName}
+                onChange={handleChange}
+              />
+              <label className="txt-label d-lg-none d-xl-none">Phone Number</label>
+              <Input
+                className="input d-lg-none d-xl-none"
+                type="number"
+                name="phoneNumber"
+                value={form.phoneNumber}
+                onChange={handleChange}
+              />
             </div>
-            <div className="input-left ms-3">
+            <div className="input-left ms-xl-3">
               <label className="txt-label">Company Name</label>
               <Input
                 className="input"
@@ -524,7 +548,6 @@ const LandingPage = () => {
               />
             </div>
           </div>
-
           <label className="txt-label">Notes</label>
           <div className="d-flex flex-direction-column">
             <textarea
