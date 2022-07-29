@@ -6,7 +6,7 @@
   padding: 7rem;
   width: 100%;
   height: 825px;
-  background-color: #fbb03b;
+  background-color: #ffa820;
 }
 
 .carousel-control-next-icon {
@@ -143,6 +143,9 @@
   justify-content: center;
   align-items: center;
 }
+.features img{
+  width: 350px;
+}
 
 .features1 h5 {
   font-family: "Nunito";
@@ -219,6 +222,9 @@
   display: flex !important;
   flex-direction: row;
   margin-left: 2rem;
+}
+.ratings::-webkit-scrollbar-thumb {
+    background: transparent;
 }
 
 .rating {
@@ -307,7 +313,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 679px;
   background: #2f2f7c;
   box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
@@ -415,6 +420,7 @@
   justify-content: center;
 }
 
+
 @media screen and (max-width: 1024px) {
   .txt-join {
     font-size: 28px;
@@ -506,6 +512,10 @@
   .contacts p {
     font-size: 17px;
   }
+
+  .logo-WA{
+    margin-left: 26rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -515,8 +525,8 @@
   }
 
   .img-slide {
-    width: 260px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     margin-left: 0.4rem;
   }
 
@@ -541,9 +551,88 @@
   .notes {
     width: 600px;
   }
+  .ms-5,.ms-3,.me-5,.award,.ms-4{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .ps-5{
+    padding-left: 0px !important;
+  }
+  h5{
+    text-align: center;
+  }
+  .desc {
+    display: block;
+    position: relative;
+  }
+  .desc p{
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 175px;
+  }
+  .desc img{
+    position: absolute;
+    top:0px;
+    width: 60%;
+    left: 20%;
+  }
+
+  .logo-WA{
+    margin-left: 40rem;
+  }
+  .testimony-mobile{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 0px !important;
+  }
+  .py-5 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .ratings{
+    margin-top: 20px !important;
+    padding-top: 25px !important;
+    margin-left: 0px !important;
+    overflow-x: scroll;
+    padding-bottom: 25px !important;
+    padding-left: 18px;
+  }
+  .txt-rating {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #000000;
+    width: 195px;
+  }
+  .clients{
+    text-align: center;
+  }
+  .clients .mx-5{
+    margin-right: 0px !important;
+  }
+  .logo img{
+    height: 48px;
+  }
+  .carousel{
+    margin-bottom: 50px;
+  }
+  .carousel-caption{
+    display: none;
+  }
+
+  .desc img{
+    width: 150px;
+    margin-left: 7rem!important;
+  }
+
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 370px) {
 
   .carousel {
     padding: 1rem;
@@ -613,7 +702,6 @@
     align-items: center;
     justify-content: center;
     width: 328px;
-    margin: 3rem 1rem;
   }
 
   .our-product h2 {
@@ -644,7 +732,7 @@
     justify-content: center;
   }
 
-  .testimony h2 {
+  .title-testimonial {
     font-family: "Nunito";
     font-style: normal;
     font-weight: 700;
@@ -655,7 +743,7 @@
     color: #fbb03b;
   }
 
-  .testimony p {
+  .desc-testimonial {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
@@ -665,68 +753,28 @@
     color: #000000;
   }
 
-  .desc{
+  .our-clients-mobile {
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .desc p{
-    margin-left: 0.5rem;
-  }
-
-  .bot-img{
-    display: none;
-  }
-
-  .end-img{
-    margin-left: 10rem;
-  }
-
-  .award {
-    margin-left: 0.1rem!important;
-  
-  }.award {
-    margin-left: -17rem;
-  }
-
-
-  /* .ratings {
-    display: none !important;
-  } */
-
-  .ratings{
-    display: flex!important;
     flex-direction: row;
-    width: 85%;
+    width: 100%;
     overflow-x: scroll;
-    overflow-y: hidden;
-    padding-right: -5rem!important;
   }
 
-  .ratings::-webkit-scrollbar {
-    width: 12px;
-    height: 5px;
-    background: #fafcff;
-  }
-  .ratings::-webkit-scrollbar-thumb {
-    background: #E0E0E0;
-    border-radius: 10px;
-  }
-
-  .rating{
+  .clients-mobile {
     width: 288px;
     height: 127px;
     padding: 1rem;
-    margin-left: 1rem;
     background: #ffffff;
     box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.04),
       0px 4px 8px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
   }
 
-  .txt-rating {
-    width: 300px;
+  .ratings {
+    display: none !important;
+  }
+
+  .txt-rating-mobile {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
@@ -735,7 +783,7 @@
     color: #000000;
   }
 
-  .name {
+  .name-mobile {
     font-family: "Exo 2";
     font-style: normal;
     font-weight: 700;
@@ -746,7 +794,7 @@
     margin-bottom: 0.5rem;
   }
 
-  .profesi {
+  .profesi-mobile {
     font-family: "Exo 2";
     font-style: normal;
     font-weight: 700;
@@ -755,7 +803,7 @@
     color: #706f6f;
   }
 
-  .profile {
+  .profile-mobile {
     display: flex;
     flex-direction: row;
     margin-top: -1.2rem;
@@ -766,15 +814,9 @@
     height: 24px;
   }
 
-  .stars img{
-    width: 64px;
-    height: 64px;
-  }
-
-  .Name {
+  .Name-mobile {
     display: flex;
     flex-direction: column;
-    margin-top: -0.4rem;
   }
 
   .clients h2 {
@@ -810,93 +852,70 @@
     justify-content: center;
   }
 
-  .img-client{
-    width: 64px;
-    height: 35px;
-  }
-
-
   .contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 328px;
-    height: 777px;
-    background: #2f2f7c;
-    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-    margin-left: 1.5rem;
+    display: none;
   }
 
-  .contacts h2 {
+  .contacts-mobile {
+    width: 328px;
+    height: 477px;
+    background: #ffffff;
+    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.04),
+      0px 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+
+  .contacts-mobile h2 {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     text-align: center;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #fbb03b;
   }
-  
-  .contacts p {
+
+  .contacts-mobile p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
   }
 
-  .input-group {
+  .group-input-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  
 
-  .input {
-    width: 280px;
+  .input-mobile {
+    width: 280px !important;
     height: 42px;
     outline: none;
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding-left: 0.5rem;
+    padding-left: 2rem;
   }
 
-  .notes{
-    width: 280px;
-    height: 82px;
-    outline: none;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding-left: 0.5rem;
-  }
-
-  .input-left{
-    display: none;
-  }
-
-  .txt-label {
+  .txt-label-mobile {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #ffffff;
+    color: #4c4d4f;
   }
 
-  .btn-send{
+  .btn-send-mobile{
     width: 160px;
     height: 32px;
     margin-top: 1rem;
     margin-left: 3.8rem;
-    background: #5db6f2;
+    background: #2F2F7C;
     border-radius: 8px;
     font-family: "Nunito";
     font-style: normal;
@@ -913,6 +932,20 @@
     display: none;
   }
 
+  .logo-WA{
+    margin-left: 10rem!important
+  }
 }
 
+
+@media screen and (max-width : 400px) {
+  .desc img{
+    margin-left: 1rem!important;
+    /* background-color: #5db6f2; */
+  }
+
+  .logo-WA{
+    margin-left: 17rem!important
+  }
+}
 /* background: #FE9961; */

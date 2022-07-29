@@ -24,10 +24,10 @@ const LandingPage = () => {
       [e.target.name]: e.target.value,
     });
   };
-  // https://app.zeals.asia/apiv1/maildemo
+
   const handleContactUs = (e) => {
     axios
-      .post("https://app.zeals.asia/api/pushdemorequest", {
+      .post("http://zeals.id/apiv1/maildemo", {
         fullName: form.fullName,
         email: form.email,
         companyName: form.companyName,
@@ -35,7 +35,7 @@ const LandingPage = () => {
         notes: form.notes,
       })
       .then((res) => {
-        const result = res.data.data;
+        const result = res.data;
         console.log("ini hasilnya", result);
       })
       .catch((err) => {
@@ -112,283 +112,179 @@ const LandingPage = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <div className="our-product py-xl-5">
-        <h2>Our Product</h2>
-        <p className="mx-xl-5 px-xl-5 mx-2 px-2">
-          Integrated Digital Marketing Ecosystem that helps you connect with
-          your audience. <br /> Aliquam erat volutpat. Nunc vitae pharetra
-          ipsum. Morbi ac aliquet risus.
-        </p>
-      </div>
-      <div className="features mb-xl-5">
-        <div className="features1 px-xl-5 my-xl-5">
-          <h5 className="mb-xl-5 ms-xl-5 mb-2">Affiliate Marketing Platform</h5>
-          <div className="desc">
-            <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide me-xl-4"
-            />
-            <p className="">
-              Zeals Affiliate marketing are those who are socially active
-              and are connected to your targeted real-person that will
-              share Zeals ‘unique link’ to enhance exposure and
-              conversion at the same time.
-            </p>
-          </div>
+
+      <div className="container">
+        <div className="our-product py-5">
+          <h2>Our Product</h2>
+          <p className="mx-xl-5 px-xl-5 mx-2 px-2">
+            Integrated Digital Marketing Ecosystem that helps you connect with
+            your audience. <br /> Aliquam erat volutpat. Nunc vitae pharetra
+            ipsum. Morbi ac aliquet risus.
+          </p>
         </div>
-        <div className="features1 px-xl-5 my-xl-5 my-3">
-          <h5 className="mb-xl-5 ms-xl-5 mb-2">Online to Offline Voucher</h5>
-          <div className="desc text-end">
-          <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide d-lg-none d-xl-none ms-xl-4 d-flex end-img"
-            />
-            <p>
-              Our online-to-offline system enables you to create an actionable
-              and measurable campaign at the same time, in one single
-              platform through specifically generated QR for your
-              campaign.
-            </p>
-            <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide bot-img ms-4"
-            />
+        <div className="features mb-5 d-lg-block d-xl-block">
+          <div className="features1 px-5">
+            <h5 className="mb-5 ms-5">Affiliate Marketing Platform</h5>
+            <div className="desc">
+              <img
+                src="/img/products/affiliate_marketing.png"
+                alt=""
+                width={480}
+                className="img-fluid me-xl-4"
+              />
+              <p>
+                Zeals Affiliate marketing are those who are socially active
+                and are connected to your targeted real-person that will
+                share Zeals ‘unique link’ to enhance exposure and
+                conversion at the same time.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="features1 px-xl-5 my-xl-5 my-3">
-          <h5 className="mb-xl-5 ms-xl-5 mb-2">Social Media Listening</h5>
-          <div className="desc">
-            <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide me-xl-4"
-            />
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially
-            </p>
+          <div className="features1 px-5 my-5">
+            <h5 className="mb-5 ms-3">Online to Offline Voucher</h5>
+            <div className="desc text-end">
+              <p>
+                Our online-to-offline system enables you to create an actionable
+                and measurable campaign at the same time, in one single
+                platform through specifically generated QR for your
+                campaign.
+              </p>
+              <img
+                src="/img/products/online_to_offline.png"
+                alt=""
+                width={480}
+                className="img-fluid ms-4"
+              />
+            </div>
           </div>
-        </div>
-        <div className="features1 px-xl-5 my-xl-5 my-3">
-          <h5 className="mb-xl-5 ms-xl-5 mb-2">Digital Marketing Consultant</h5>
-          <div className="desc text-end">
-          <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide d-lg-none d-xl-none ms-xl-4 d-flex end-img"
-            />
-            <p>
-              Our Digital Marketing Consultant will assist designing digital
-              strategies and providing solutions to help you achieve business
-              goals through the implementation of Digital Marketing.
-            </p>
-            <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide bot-img ms-4"
-            />
+          <div className="features1 px-5">
+            <h5 className="mb-5 ms-5">Social Media Listening</h5>
+            <div className="desc">
+              <img
+                src="/img/products/social_media_listening.png"
+                alt=""
+                width={480}
+                className="img-fluid me-4"
+              />
+              <p>
+                With Social Media Listening you will get hearing ability and strategic action by tracking online conversations related to your brand and industry to help you develop an effective solution that perfectly fits into your customer needs
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="features1 px-xl-5 my-xl-5 my-3">
-          <h5 className="mb-xl-5 ms-xl-5 mb-2">Social Media Scoring</h5>
-          <div className="desc">
-            <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide me-4"
-            />
-            <p>
-              With Social Media Listening you will get hearing ability and
-              strategic action by tracking online conversations related to your
-              brand and industry to help you develop an effective solution that
-              perfectly fits into your customer needs.
-            </p>
+          <div className="features1 px-5 my-5">
+            <h5 className="mb-5 ms-3">Digital Marketing Consultant</h5>
+            <div className="desc text-end">
+              <p>
+                Our Digital Marketing Consultant will assist designing digital
+                strategies and providing solutions to help you achieve business
+                goals through the implementation of Digital Marketing.
+              </p>
+              <img
+                src="/img/products/digital_marketing_consultant.png"
+                alt=""
+                width={480}
+                className="img-fluid ms-4"
+              />
+            </div>
           </div>
-        </div>
-        <div className="features1 px-xl-5 my-xl-5 my-3">
-          <h5 className="mb-xl-5 ms-xl-5 mb-2">Marketplace for influencer and buzzer</h5>
-          <div className="desc text-xl-end">
-          <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide d-lg-none d-xl-none ms-xl-4 d-flex end-img"
-            />
-            <p>
-              Our hand-picked influencers with strong engagement rate will take
-              your campaigns to the next level.
-            </p>
-            <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide bot-img"
-            />
+          <div className="features1 px-5">
+            <h5 className="mb-5 ps-5">Social Media Scoring</h5>
+            <div className="desc">
+              <img
+                src="/img/products/SOCIAL MEDIA SCORING.png"
+                alt=""
+                width={480}
+                className="img-fluid me-4"
+              />
+              <p>
+                Know where you stand with our Social Media Scoring. 
+                You can find out the influence of your brand's social media accounts on users and followers, and how well your strategy is performing on social channels.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="features1 px-xl-5 my-xl-5 my-3">
-          <h5 className="mb-2 mb-xl-5 award">Awarding</h5>
-          <div className="desc">
-            <img
-              src="/img/Business team looking for new people 5.svg"
-              alt=""
-              width={480}
-              className="img-fluid img-slide me-4"
-            />
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially
-            </p>
+          <div className="features1 px-5 my-5">
+            <h5 className="mb-5 me-5">Marketplace for influencer and buzzer</h5>
+            <div className="desc text-end">
+              <p>
+                Our hand-picked influencers with strong engagement rate will take
+                your campaigns to the next level.
+              </p>
+              <img
+                src="/img/products/influencer_marketing.png"
+                alt=""
+                width={480}
+                className="img-fluid"
+              />
+            </div>
+          </div>
+          <div className="features1 px-5">
+            <h5 className="mb-5 award">Awarding</h5>
+            <div className="desc">
+              <p>Awarding is given to brands that successfully carry out digital marketing so that they have a positive impact on the performance of a brand, both by increasing awareness, market share, and increasing customer loyalty.</p>
+              <img
+                src="/img/products/AWARDING.png"
+                alt=""
+                width={480}
+                className="img-fluid me-4"
+              />
+              <p>
+
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="testimony py-5 px-3">
+      <div className="testimony d-lg-block d-xl-block py-5">
         <h2>Testimonials</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-          aliquet elit eu lobortis. Aliquam erat <br /> volutpat. Nunc vitae
-          pharetra ipsum. Morbi ac aliquet risus.
+          We are happy to share our client’s review
         </p>
       </div>
-
-      {/* <div className="testimony-mobile ms-4 mt-5 d-lg-none d-xl-none">
-        <h5 className="title-testimonial">Testimonials</h5>
-        <p className="desc-testimonial">
-          We are happy to share our <br /> client’s review
-        </p>
-        <div className="our-clients-mobile">
-          <div className="clients-mobile ms-4 mt-4">
-            <p className="txt-rating-mobile">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-              aliquet elit eu lobortis.
-            </p>
-            <div className="profile-mobile">
-              <img
-                className="img-fluid"
-                src="/img/Ellipse 56.svg"
-                alt=""
-                width={24}
-                height={24}
-              />
-              <div className="Name-mobile">
-                <p className="name-mobile">Jhon Doe</p>
-                <p className="profesi-mobile">Journalist</p>
-              </div>
-              <div className="stars ms-5 mt-3">
-                <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="clients-mobile ms-4 mt-4">
-            <p className="txt-rating-mobile">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-              aliquet elit eu lobortis.
-            </p>
-            <div className="profile-mobile">
-              <img
-                className="img-fluid"
-                src="/img/Ellipse 56.svg"
-                alt=""
-                width={24}
-                height={24}
-              />
-              <div className="Name-mobile">
-                <p className="name-mobile">Jhon Doe</p>
-                <p className="profesi-mobile">Journalist</p>
-              </div>
-              <div className="stars ms-5 mt-3">
-                <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="clients-mobile ms-4 mt-4">
-            <p className="txt-rating-mobile">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-              aliquet elit eu lobortis.
-            </p>
-            <div className="profile-mobile">
-              <img
-                className="img-fluid"
-                src="/img/Ellipse 56.svg"
-                alt=""
-                width={24}
-                height={24}
-              />
-              <div className="Name-mobile">
-                <p className="name-mobile">Jhon Doe</p>
-                <p className="profesi-mobile">Journalist</p>
-              </div>
-              <div className="stars ms-5 mt-3">
-                <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="ratings py-xl-5 my-xl-5">
-        <div className="rating my-3 my-xl-0">
+      <div className="ratings py-5 my-5">
+        <div className="rating">
           <p className="txt-rating">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
             aliquet elit eu lobortis.
           </p>
           <div className="profile">
-            <img className="img-fluid mt-xl-0 mt-3 me-xl-0 me-2" src="/img/Ellipse 56.svg" alt="" />
-            <div className="Name ms-xl-2">
-              <p className="name">Jhon Doe</p>
-              <p className="profesi">journalist</p>
-            </div>
-            <div className="stars ms-xl-4 mt-xl-4 ms-5">
-              <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div className="rating my-3 my-xl-0">
-          <p className="txt-rating">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-            aliquet elit eu lobortis.
-          </p>
-          <div className="profile">
-            <img className="img-fluid mt-xl-0 mt-3 me-xl-0 me-2" src="/img/Ellipse 56.svg" alt="" />
-            <div className="Name ms-xl-2">
-              <p className="name">Jhon Doe</p>
-              <p className="profesi">journalist</p>
-            </div>
-            <div className="stars ms-xl-4 mt-xl-4 ms-5">
-              <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div className="rating my-3 my-xl-0">
-          <p className="txt-rating">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-            aliquet elit eu lobortis.
-          </p>
-          <div className="profile">
-            <img className="img-fluid mt-xl-0 mt-3 me-xl-0 me-2" src="/img/Ellipse 56.svg" alt="" />
+            <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
             <div className="Name ms-2">
               <p className="name">Jhon Doe</p>
               <p className="profesi">journalist</p>
             </div>
-            <div className="stars ms-xl-4 mt-xl-4 ms-5">
+            <div className="stars ms-4 mt-4">
+              <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="rating">
+          <p className="txt-rating">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
+            aliquet elit eu lobortis.
+          </p>
+          <div className="profile">
+            <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
+            <div className="Name ms-2">
+              <p className="name">Jhon Doe</p>
+              <p className="profesi">journalist</p>
+            </div>
+            <div className="stars ms-4 mt-4">
+              <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="rating">
+          <p className="txt-rating">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
+            aliquet elit eu lobortis.
+          </p>
+          <div className="profile">
+            <img className="img-fluid" src="/img/Ellipse 56.svg" alt="" />
+            <div className="Name ms-2">
+              <p className="name">Jhon Doe</p>
+              <p className="profesi">journalist</p>
+            </div>
+            <div className="stars ms-4 mt-4">
               <img className="img-fluid" src="/img/Frame 451.svg" alt="" />
             </div>
           </div>
@@ -397,23 +293,8 @@ const LandingPage = () => {
       <div className="clients my-5 px-xl-0 px-2">
         <h2>Our Clients</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-          aliquet elit eu lobortis. Aliquam erat <br /> volutpat. Nunc vitae
-          pharetra ipsum. Morbi ac aliquet risus.
+          Several big company already integrated with our Products & Services
         </p>
-
-        <div className="img-clients-mobile d-xl-none d-lg-none my-2">
-          <img className="img-client" src="/img/Logo Client-01.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-02.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-03.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-04.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-05.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-06.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-07.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-08.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-09.jpg" alt="" />
-          <img className="img-client" src="/img/Logo Client-10.jpg" alt="" />
-        </div>
 
         <div className="img-clients my-5 py-4">
           <img
@@ -440,130 +321,89 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* <div className="contacts-mobile d-lg-none d-xl-none ms-3">
-        <h2>Contact Us</h2>
-        <p>Get your free personalized demo</p>
-        <div className="group-input-mobile ms-4">
-          <div className="mt-3 mb-2">
-          <label className="txt-label-mobile mb-1">First Name</label>
-          <Input
-            className="input-mobile"
-            type="text"
-            name="fullName"
-            value={form.fullName}
-            onChange={handleChange}
-          />
-          </div>
-          <div>
-          <label className="txt-label-mobile mb-1">Last Name</label>
-          <Input
-            className="input-mobile"
-            type="text"
-            name="fullName"
-            value={form.fullName}
-            onChange={handleChange}
-          />
-          </div>
-          <div className="my-2">
-          <label className="txt-label-mobile mb-1">Email </label>
-          <Input
-            className="input-mobile"
-            type="email"
-            onChange={handleChange}
-            name="email"
-            value={form.email}
-          />
-          </div>
-          <div>
-          <label className="txt-label-mobile mb-1">Phone Number</label>
-          <Input
-            className="input-mobile"
-            type="number"
-            name="phoneNumber"
-            value={form.phoneNumber}
-            onChange={handleChange}
-          />
-          </div>
-          <Button className="btn-send-mobile">Send</Button>
-        </div>
-      </div> */}
-
       <div className="contacts">
-        <h2>Contact Us</h2>
+        <h2 className="mt-5">Contact Us</h2>
         <p>Get your free personalized demo</p>
-        <div>
-          <div className="input-group mt-5">
-            <div className="input-right">
-              <label className="txt-label">Full Name</label>
-              <Input
-                className="input"
-                type="text"
-                name="fullName"
-                value={form.fullName}
-                onChange={handleChange}
-              />
+        <div className="container mb-5">
+          <div className="row justify-content-center">
+            <div className="col-10 col-md-8">
+              <div className="row mt-5">
+                <div className="col-xs-12 col-sm-6">
+                  <div className="form-group mt-1">
+                    <label className="txt-label">Full Name</label>
+                    <Input
+                      className="form-control"
+                      type="text"
+                      name="fullName"
+                      value={form.fullName}
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
+                <div className="col-xs-12 col-sm-6">
+                  <div className="form-group mt-1">
+                    <label className="txt-label">Email </label>
+                    <Input
+                      className="form-control"
+                      type="email"
+                      onChange={handleChange}
+                      name="email"
+                      value={form.email}
+                    />
+                  </div>
+                </div>
+                <div className="col-xs-12 col-sm-6">
+                  <div className="form-group mt-1">
+                    <label className="txt-label">Company Name</label>
+                    <Input
+                      className="form-control"
+                      type="text"
+                      name="companyName"
+                      value={form.companyName}
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
+                <div className="col-xs-12 col-sm-6">
+                  <div className="form-group mt-1">
+                    <label className="txt-label">Phone Number</label>
+                    <Input
+                      className="form-control"
+                      type="number"
+                      name="phoneNumber"
+                      value={form.phoneNumber}
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
+              </div>
 
-              <label className="txt-label">Email </label>
-              <Input
-                className="input"
-                type="email"
-                onChange={handleChange}
-                name="email"
-                value={form.email}
-              />
-
-<label className="txt-label d-lg-none d-xl-none">Company Name</label>
-              <Input
-                className="input d-lg-none d-xl-none"
-                type="text"
-                name="companyName"
-                value={form.companyName}
-                onChange={handleChange}
-              />
-              <label className="txt-label d-lg-none d-xl-none">Phone Number</label>
-              <Input
-                className="input d-lg-none d-xl-none"
-                type="number"
-                name="phoneNumber"
-                value={form.phoneNumber}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="input-left ms-xl-3">
-              <label className="txt-label">Company Name</label>
-              <Input
-                className="input"
-                type="text"
-                name="companyName"
-                value={form.companyName}
-                onChange={handleChange}
-              />
-              <label className="txt-label">Phone Number</label>
-              <Input
-                className="input"
-                type="number"
-                name="phoneNumber"
-                value={form.phoneNumber}
-                onChange={handleChange}
-              />
+              <label className="txt-label">Notes</label>
+              <div className="d-flex flex-direction-column">
+                <textarea
+                  className="form-control"
+                  name="notes"
+                  type="text"
+                  id=""
+                  cols="30"
+                  rows="5"
+                  value={form.notes}
+                  onChange={handleChange}
+                ></textarea>
+              </div>
+              <Button onClick={handleContactUs} className="btn-send" type="submit">
+                Send
+              </Button>
             </div>
           </div>
-          <label className="txt-label">Notes</label>
-          <div className="d-flex flex-direction-column">
-            <textarea
-              className="notes"
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-          <Button onClick={handleContactUs} className="btn-send" type="submit">
-            Send
-          </Button>
         </div>
       </div>
       <Footer />
+      <div className="logo-WA float- d-xl-none">
+        <a href="">
+        <img className="img-fluid fixed-bottom logo-WA" src="/img/WhatsApp-Logo.svg" alt="" width={100} height={100}/>
+        </a>
+      </div>
     </div>
   );
 };

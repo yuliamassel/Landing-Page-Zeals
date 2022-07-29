@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
-import * as BsIcons from "react-icons/gi";
 import "../Components.css";
-import Modal from "../Modal";
 
 const Navbar = () => {
 
-  const [openModal, setOpenModal]= useState()
+  const [state, setState] = useState(false)
+
+  const toggle = () =>{
+    setState(!state)
+  }
 
   return (
-    <div className="navbar px-xl-5 px-2">
+    <div className="navbar px-xl-5 px-2 fixed-top">
       <div className="logo">
         <img src="/img/image 1.svg" alt="" width={180} />
       </div>
@@ -33,9 +35,34 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-      <BsIcons.GiHamburgerMenu className="me-2 d-lg-none d-xl-none" size={28} onClick={()=>{setOpenModal(true)}}/>
-        {openModal && <Modal className="Tabs" closeModal={setOpenModal}>kakakak</Modal>}
+        {/* <button
+        onClick={toggle}
+          className={"toggle-btn d-xl-none d-md-block" + ( state ? "active" : "")}
+          id="toggle"
+        ></button> */}
+        <button onClick={toggle} className="hamburger hamburger--boring d-xl-none" type="button">
+  <span className="hamburger-box">
+    <span className="hamburger-inner"></span>
+  </span>
+</button>
       </div>
+      {state ?  <div className="tabs-down">
+      <Nav.Link className="nav-down" href="/">
+            Home
+          </Nav.Link>
+          <Nav.Link className="nav-down" href="/">
+            Product
+          </Nav.Link>
+          <Nav.Link className="nav-down" href="/">
+            Testimony
+          </Nav.Link>
+          <Nav.Link className="nav-down" href="/">
+            Our Clients
+          </Nav.Link>
+          <Nav.Link className="nav-down" href="/">
+            Contact
+          </Nav.Link>
+      </div>:""}    
     </div>
   );
 };

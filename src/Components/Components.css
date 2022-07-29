@@ -7,18 +7,19 @@
   height: 100px;
   width: 100%;
   background: #ffffff;
+
 }
 
 .tabs {
   display: flex;
   flex-direction: row;
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 18px;
   color: #777676;
-  margin-left: 50rem;
+  margin-left: 33rem;
 }
 
 .nav-list:hover {
@@ -28,44 +29,43 @@
 
 /* STYLING FOOTER */
 .footer {
-  display: flex;
+  /*display: flex;*/
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 383px;
-  padding: 8rem;
+  padding:15px;
   background-color: #ffffff;
 }
 
-.txt-footer a {
+.txt-footer a{
   display: flex;
   flex-direction: column;
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 14px;
+  line-height: 30px;
   color: #666666;
   text-decoration: none;
 }
 
-.txt-contact {
+.txt-contact{
   display: flex;
   flex-direction: row;
 }
 
-.txt-contact a {
-  font-family: "Nunito";
+.txt-contact a{
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 20px;
   color: #666666;
-  text-decoration: none !important;
+  text-decoration: none!important;
 }
 
 .link {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -75,22 +75,121 @@
   text-decoration: none;
 }
 
-.footer h4 {
-  font-family: "Nunito";
+.footer h4{
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 20px;
   color: #666666;
 }
 
-@media screen and (max-width: 768px) {
-  .footer {
-    padding: 3rem;
-  }
+.tabs-down {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 338px;
+  box-sizing: border-box;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  z-index: 2000;
+  background: #ffffff;
+  opacity: 1;
+  transition: transform 0.5s cubic-bezier(.5, 0, .5, 1);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: 27.4rem;
+  margin-left: -0.5rem;
+  padding: 3rem;
 }
 
-@media screen and (max-width: 380px) {
+.hamburger--boring .hamburger-inner, .hamburger--boring .hamburger-inner::before, .hamburger--boring .hamburger-inner::after {
+  transition-property: none; }
+
+.hamburger--boring.is-active .hamburger-inner {
+  transform: rotate(45deg); }
+  .hamburger--boring.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0; }
+  .hamburger--boring.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg); }
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #000; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+
+.tabs-down-open .tabs-down{
+  transform: translateY(-12vh);
+}
+
+.nav-down{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+color: #AAAAAA;
+margin-bottom: 2rem;
+}
+
+.nav-down:hover{
+  border-bottom: 4px solid #5DB6F2;
+  color: #fbb03b;
+}
+
+@media screen and (max-width: 768px){
+
+
+}
+
+@media screen and (max-width: 380px){
   /* .logo{
     margin-left: -2rem;
   }
@@ -100,101 +199,28 @@
     padding-left: 5rem;
   } */
 
-  .footer {
+  .footer{
     display: none;
   }
 
-  .social-media {
+  .social-media{
     display: none;
   }
 
-  .footer-mobile {
+  .footer-mobile{
     width: 100%;
-    /* height: 583px; */
     background: rgba(0, 0, 0, 0.1);
   }
 
-  .desc-footer{
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 20px;
-color: #000000;
-margin-top: 2rem;
-  }
-
-  .addres{
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 20px;
-color: #000000;
-margin-top: 2rem;
-  }
-
-  .txt-contact-mobile a{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 14px;
-color: #000000;
-text-decoration: none;
-  }
-
-  .txt-footer-mobile a{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 0px;
-    color: #000000;
-    margin-top: 2rem;
-    text-decoration: none;
-  }
-
-  .sosmed-footer span{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 14px;
-color: #000000;
-  }
-
-  .sosmed-footer a{
-    text-decoration: none!important;
-  }
-
-  .logo-footer {
+  .logo-footer{
     width: 79.17px;
-    height: 25px;
+height: 25px;
   }
 
-  .img-sosmed-footer {
+  .img-sosmed-footer{
     width: 20px;
     height: 20px;
     border-radius: 50%;
   }
 
-  .toggle-btn {
-    border: none;
-    outline: none;
-  }
-
-  .modal {
-    position: absolute;
-    width: 360px;
-    height: 338px;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.4));
-    z-index: 2000;
-    background: #ffffff;
-    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 0px 0px 16px 16px;
-  }
 }
